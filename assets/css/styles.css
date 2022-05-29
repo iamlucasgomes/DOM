@@ -44,6 +44,8 @@ body {
     font-family: 'Quicksand';
     display: flex;
     flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 body.dark-mode {
