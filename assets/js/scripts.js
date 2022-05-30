@@ -25,14 +25,13 @@ function changeText() {
 }
 
 function changeLogo() {
-    //const DIA = document.getElementsByClassName("logo").src = "assets/img/dia.gif";
-    //const NOITE = document.getElementsByClassName("logo").src = "assets/img/noite.gif";
+
     if (BODY.classList.contains(DARK_MODE_CLASS)) {
-        //document.getElementsByClassName("logo").src = "assets/img/noite.gif";
+       
         document.getElementById("logo").src = "assets/img/noite.gif"
         return;
     } else {
-        //document.getElementsByClassName("logo").src = "assets/img/dia.gif";
+        
         document.getElementById("logo").src = "assets/img/dia.gif"
         return;
     }
