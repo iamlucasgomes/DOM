@@ -1,6 +1,7 @@
 function changeMode() {
     changeClasses();
     changeText();
+    changeLogo();
 }
 
 function changeClasses() {
@@ -23,11 +24,26 @@ function changeText() {
     H1.innerHTML = "Usando " + LIGHT_MODE;
 }
 
+function changeLogo() {
+    //const DIA = document.getElementsByClassName("logo").src = "assets/img/dia.gif";
+    //const NOITE = document.getElementsByClassName("logo").src = "assets/img/noite.gif";
+    if (BODY.classList.contains(DARK_MODE_CLASS)) {
+        //document.getElementsByClassName("logo").src = "assets/img/noite.gif";
+        document.getElementById("logo").src = "assets/img/noite.gif"
+        return;
+    } else {
+        //document.getElementsByClassName("logo").src = "assets/img/dia.gif";
+        document.getElementById("logo").src = "assets/img/dia.gif"
+        return;
+    }
+}
+
 const DARK_MODE_CLASS = "dark-mode";
 const BUTTON = document.getElementById("mode-selector");
 const H1 = document.getElementById("page-title");
 const BODY = document.getElementsByTagName("body")[0];
 const FOOTER = document.getElementsByTagName("footer")[0];
+const LOGO = document.getElementsByClassName("logo");
 
 BUTTON.addEventListener("click", changeMode)
 

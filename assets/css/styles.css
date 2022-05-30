@@ -3,23 +3,30 @@
 @media (max-width: 480px){
     body{
         background-color: #e5e8e8;
-        color: #4e545c;
-        margin: 0;
+        color: #1f1b24;
+        margin-right: 0;
+        margin: 1em;
         font-family: 'Quicksand';
         display: flex;
         flex-direction: column;
-        max-width: 300px;
+        align-items: center;
+        max-width: 400px;
+        justify-content: center;
         text-align: center;
         overflow-x: hidden;
+
+    }
+    #logo{
+        width: 250px;
     }
     footer{
-        max-width: 300px;
+        max-width: 400px;
     }
 }
 @media (max-width: 767px) {
     body{
         background-color: #e5e8e8;
-        color: #4e545c;
+        color: #1f1b24;
         margin: 0;
         font-family: 'Quicksand';
         display: flex;
@@ -28,10 +35,13 @@
         overflow-x: hidden;
         justify-content: center;
     }
+    #logo{
+        width: 250px;
+    }
 }
 body {
-    background-color: #e5e8e8;
-    color: #4e545c;
+    background-color: #7B68EE;
+    color: #1f1b24;
     margin: 0;
     font-family: 'Quicksand';
     display: flex;
@@ -41,7 +51,7 @@ body {
 }
 
 body.dark-mode {
-    background-color: #000401;
+    background-color: #121212;
     color: #e5e8e8;
 }
 
@@ -56,7 +66,7 @@ main {
 
 footer {
     width: 100%;
-    background-color: #4e545c;
+    background-color: #1f1b24;
     padding: 16px;
     color: #e5e8e8;
     position: fixed;
@@ -66,8 +76,8 @@ footer {
 }
 
 footer.dark-mode {
-    background-color: #8d9797;
-    color: #000401;
+    background-color: #332940;
+    color: #e5e8e8;
 }
 
 button {
@@ -76,21 +86,24 @@ button {
     height: 60px;
     width: 200px;
     border: none;
-    background-color: #4e545c;
+    background-color: #332940;
     color: #e5e8e8;
     transition: all 0.5s linear;
 }
 
 button:hover {
-    background-color: #000401;
+    background-color: #121212;
 }
 
 button.dark-mode {
-    background-color: #e5e8e8;
-    color: #4e545c;
+    background-color: #1f1b24;
+    color: #e5e8e8;
 }
 
 button.dark-mode:hover {
-    background-color: #4e545c;
+    background-color: #332940;
     color: #e5e8e8;
+}
+#logo{
+    width: 320px;
 }
